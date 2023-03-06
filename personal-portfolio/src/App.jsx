@@ -1,15 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import AppRouter from './AppRouter'
 import './App.css'
+import NavigationBar from './NavigationBar'
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
 
   return (
-    <div className="App">
-       Hello World.
+    <div>
+      <NavigationBar />
+      <AppRouter />
     </div>
   )
 }
-
-export default App
