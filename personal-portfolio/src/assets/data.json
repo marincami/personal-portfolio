@@ -1,0 +1,33 @@
+{
+	"routes": [
+    {
+      "path":"/",
+      "elementName": "Home",
+      "props": {
+        "title": "My personal portfolio"
+      }
+    },
+    {
+      "path":"/contact",
+      "elementName": "Contact",
+      "props": {
+        "email": {
+          "name": "marin_cami@hotmail.com",
+          "icon": "email"
+        },
+        "phone": {
+          "name": "+57 3176796792",
+          "icon": "phone"
+        },
+        "linkedin": {
+          "name": "https://www.linkedin.com/in/camila-marin-aguirre/",
+          "icon": "linkedin"
+        },
+        "instagram": {
+          "name": "https://www.instagram.com/marin_cami_/?igshid=MDM4ZDc5MmU%3D",
+          "icon": "instagram"
+        }
+      }
+    }
+	]
+}

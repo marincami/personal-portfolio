@@ -1,7 +1,8 @@
+/*
 import Skills from './Skills'
 import Projects from './Projects'
-import Contact from './Contact'
-import Home from './Home'
+
+
 import Profile from './Profile'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -16,5 +17,38 @@ export default function AppRouter() {
 				<Route path='/contact' element={<Contact />}></Route>
 			</Routes>
     </BrowserRouter>
+	)
+}
+*/
+
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Contact from './Contact'
+import Home from './Home'
+// import data from "./data.json";
+
+export default function AppRouter({routes}) {
+	
+	function getComponent(elementName) {
+		let component;
+		switch(elementName) {
+			case 'Contact':
+				component = Contact 
+				break
+			default:
+				component = Home
+		}
+		return component
+
+	}
+
+  return (
+		<BrowserRouter>
+			<Routes>
+			{ routes.map(({path, elementName, props}) => (
+				<Route path={ path } element={ React.createElement(getComponent(elementName), props)} > </Route>
+			)) }
+			</Routes>
+		</BrowserRouter>
 	)
 }
