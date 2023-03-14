@@ -25,6 +25,8 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Contact from './Contact'
 import Home from './Home'
+import Profile from './Profile'
+import Skills from './Skills'
 // import data from "./data.json";
 
 export default function AppRouter({routes}) {
@@ -34,6 +36,12 @@ export default function AppRouter({routes}) {
 		switch(elementName) {
 			case 'Contact':
 				component = Contact 
+				break
+			case 'Profile':
+				component = Profile 
+				break
+			case 'Skills':
+				component = Skills 
 				break
 			default:
 				component = Home
