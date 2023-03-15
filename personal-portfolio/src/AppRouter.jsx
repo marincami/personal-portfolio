@@ -27,6 +27,7 @@ import Contact from './Contact'
 import Home from './Home'
 import Profile from './Profile'
 import Skills from './Skills'
+import Projects from './Projects'
 // import data from "./data.json";
 
 export default function AppRouter({routes}) {
@@ -43,11 +44,13 @@ export default function AppRouter({routes}) {
 			case 'Skills':
 				component = Skills 
 				break
+			case 'Projects':
+				component = Projects 
+				break
 			default:
 				component = Home
 		}
 		return component
-
 	}
 
   return (

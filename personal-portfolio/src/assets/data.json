@@ -28,6 +28,26 @@
           "icon": "instagram"
         }
       }
+    },
+    {
+      "path":"/profile",
+      "elementName": "Profile",
+      "props": {
+        "title": "Camila Marín Aguirre",
+        "jobTitle": "Web UI Developer",
+        "about": "I am a system engineer who loves learning and programming. I am passionate about technology and I have been working in the software industry for almost 4 years as a developer.",
+        "experience": "I have worked with web technologies in the frontend and backend, using agile methodologies like Scrum, SAFE and Kanban. I am responsible, enterprising and an active person."
+      }
+    },
+    {
+      "path":"/skills",
+      "elementName": "Skills",
+      "props": {
+        "skill": "HTML5", 
+        "skill": "CSS3",
+        "about": "I am a system engineer who loves learning and programming. I am passionate about technology and I have been working in the software industry for almost 4 years as a developer.",
+        "experience": "I have worked with web technologies in the frontend and backend, using agile methodologies like Scrum, SAFE and Kanban. I am responsible, enterprising and an active person."
+      }
     }
 	]
 }
