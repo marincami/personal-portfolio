@@ -30,5 +30,4 @@ export default function Icon({ type }) {
         { React.createElement(getIcon(type))}
         </>
     )
-
 }
