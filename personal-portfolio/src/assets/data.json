@@ -1,15 +1,6 @@
 {
 	"routes": [
     {
-      "props": {
-        "home": "Home",
-        "profile": "Profile",
-        "skills": "Skills",
-        "projects": "Projects",
-        "contact": "Contact"
-      }
-    },
-    {
       "path":"/",
       "elementName": "Home",
       "props": {
@@ -65,6 +56,11 @@
           "Github"
         ]
       }
+    },
+    {
+      "path":"/projects",
+      "elementName": "Projects",
+      "props": {}
     }
 	]
 }
